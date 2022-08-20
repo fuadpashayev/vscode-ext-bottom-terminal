@@ -3,14 +3,14 @@
   "displayName": "Bottom Terminal",
   "keywords": ["bottom", "terminal", "bottom-terminal", "bottom terminal", "status bar terminal", "status bar", "footer terminal"],
   "description": "Terminal toggle on the bottom status bar. So comfortable!",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/fuadpashayev/vscode-ext-bottom-terminal"
   },
   "icon": "icon.png",
   "engines": {
-    "vscode": "^1.70.0"
+    "vscode": "^1.0.0"
   },
   "publisher": "fuadpashayev",
   "categories": [
@@ -32,7 +32,7 @@
     "test": "node ./test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.70.0",
+    "@types/vscode": "^1.0.0",
     "@types/glob": "^7.2.0",
     "@types/mocha": "^9.1.1",
     "@types/node": "16.x",
