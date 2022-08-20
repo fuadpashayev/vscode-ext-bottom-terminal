@@ -4,6 +4,10 @@
   "keywords": ["bottom", "terminal", "bottom-terminal", "bottom terminal", "status bar terminal", "status bar", "footer terminal"],
   "description": "Terminal toggle on the bottom status bar. So comfortable!",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuadpashayev/vscode-ext-bottom-terminal"
+  },
   "icon": "icon.jpeg",
   "engines": {
     "vscode": "^1.70.0"
