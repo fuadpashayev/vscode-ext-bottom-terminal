@@ -1,21 +1,27 @@
-const vscode = require('vscode');
+const vscode = require("vscode");
 
 function activate(context) {
-	const terminalItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left);
-	terminalItem.text = `$(terminal) Terminal`;
-	terminalItem.command = 'bottom-terminal';
-	terminalItem.show();
+  const terminalItem = vscode.window.createStatusBarItem(
+    vscode.StatusBarAlignment.Left
+  );
+  terminalItem.text = `$(terminal) Terminal`;
+  terminalItem.tooltip = "Toggle Terminal";
+  terminalItem.command = "bottom-terminal";
+  terminalItem.show();
 
-	let disposable = vscode.commands.registerCommand('bottom-terminal', function () {
-		vscode.commands.executeCommand('workbench.action.togglePanel');
-	});
+  const disposable = vscode.commands.registerCommand(
+    "bottom-terminal",
+    function () {
+      vscode.commands.executeCommand("workbench.action.togglePanel");
+    }
+  );
 
-	context.subscriptions.push(disposable);
+  context.subscriptions.push(disposable);
 }
 
 function deactivate() {}
 
 module.exports = {
-	activate,
-	deactivate
-}
+  activate,
+  deactivate,
+};

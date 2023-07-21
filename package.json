@@ -1,9 +1,17 @@
 {
   "name": "bottom-terminal",
   "displayName": "Bottom Terminal",
-  "keywords": ["bottom", "terminal", "bottom-terminal", "bottom terminal", "status bar terminal", "status bar", "footer terminal"],
+  "keywords": [
+    "bottom",
+    "terminal",
+    "bottom-terminal",
+    "bottom terminal",
+    "status bar terminal",
+    "status bar",
+    "footer terminal"
+  ],
   "description": "Terminal toggle on the bottom status bar. So comfortable!",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/fuadpashayev/vscode-ext-bottom-terminal"
@@ -21,10 +29,12 @@
   ],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "bottom-terminal",
-      "title": "Bottom Terminal"
-    }]
+    "commands": [
+      {
+        "command": "bottom-terminal",
+        "title": "Bottom Terminal"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
